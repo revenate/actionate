@@ -1,10 +1,10 @@
 
 <p align="center">
-    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
+    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">
 </p>
 
 <div align="center">
-  <h1>GitHub Actions for JetBrains IDEs</h1>
+  <h1>Actionate<br>GitHub Actions for JetBrains IDEs</h1>
 </div>
 
 __Actionate__ brings the power of GitHub Actions directly into your JetBrains IDE, creating a unified, all-in-one

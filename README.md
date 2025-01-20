@@ -1,7 +1,11 @@
 
-<p align="center">
-    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="189" height="37">
-</p>
+[//]: # (<p align="center">)
+
+[//]: # (    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">)
+
+[//]: # (</p>)
+
+<img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
 
 # GitHub Actions for JetBrains IDEs
 

@@ -1,6 +1,6 @@
 ---
 name: Support request
-about: Request troubleshooting help and/or additional information
+about: Request troubleshooting help or additional information
 title: "[Support]: "
 labels: support
 assignees: ''

@@ -1,12 +1,12 @@
 ---
 name: Feature request
-about: Suggest an idea for Actionate
+about: Suggest an idea for a new feature or enhancement
 title: "[Feature Request]: "
 labels: feature request
 assignees: ''
 ---
 
-### Describe the feature
+### Describe the feature or enhancement
 
 A clear and concise description of what you want to happen.
 

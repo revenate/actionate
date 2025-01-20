@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="docs/media/actionate.svg" alt="Actionate Logo" width="150" height="150">
+  <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">
 </p>
 
 <div align="center">

@@ -4,7 +4,7 @@
 </p>
 
 <div align="center">
-  <h1>GitHub Actions for JetBrains IDEs</h1>
+  <h2>GitHub Actions for JetBrains IDEs</h2>
 </div>
 
 __Actionate__ brings the power of GitHub Actions directly into your JetBrains IDE, creating a unified, all-in-one

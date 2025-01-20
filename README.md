@@ -7,6 +7,10 @@
   <h1>GitHub Actions for JetBrains IDEs</h1>
 </div>
 
+__Actionate__ brings the power of GitHub Actions directly into your JetBrains IDE, creating a unified, all-in-one
+environment for your development flow. This seamless integration eliminates context-switching and boosts productivity,
+so you can focus on what matters most.
+
 [//]: # ()
 [//]: # ([//]: # &#40;&#41;)
 [//]: # (<div align="center">)
@@ -29,8 +33,3 @@
 [//]: # ()
 [//]: # ([//]: # &#40;# Actionate - GitHub Actions for JetBrains IDEs&#41;)
 [//]: # ()
-[//]: # (__Actionate__ brings the power of GitHub Actions directly into your JetBrains IDE, creating a unified, all-in-one )
-
-[//]: # (environment for your development flow. This seamless integration eliminates context-switching and boosts productivity, )
-
-[//]: # (so you can focus on what matters most.)

@@ -1,16 +1,13 @@
 
 <div style="display: flex; align-items: center;">
-    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" style="margin-right: 20px;">
-    <span style="font-size: 5em; font-weight: bold;">Actionate</span>
+    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100">
 </div>
 
-## GitHub Actions for JetBrains IDEs
+# Actionate - GitHub Actions for JetBrains IDEs
 
-[//]: # (<p align="center">)
-
-[//]: # (  <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">)
-
-[//]: # (</p>)
+<p align="center">
+  <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">
+</p>
 
 [//]: # ()
 [//]: # (<div align="center">)

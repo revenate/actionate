@@ -3,11 +3,7 @@
     <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">
 </p>
 
-<div align="center">
-  <h1>Actionate<br>GitHub Actions for JetBrains IDEs</h1>
-</div>
-
-[//]: # (# Actionate - GitHub Actions for JetBrains IDEs)
+# Actionate - GitHub Actions for JetBrains IDEs
 
 [//]: # ()
 [//]: # ([//]: # &#40;&#41;)

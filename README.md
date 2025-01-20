@@ -1,7 +1,7 @@
 
 <div style="display: flex; align-items: center;">
-  <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" style="margin-right: 20px;">
-  <span style="font-size: 2.5em; font-weight: bold;">Actionate</span>
+    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" style="margin-right: 20px; vertical-align: middle;">
+    <h1 style="vertical-align: middle;">Actionate</h1>
 </div>
 
 ## GitHub Actions for JetBrains IDEs

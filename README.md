@@ -1,13 +1,11 @@
 
-[//]: # (<p align="center">)
+<p align="center">
+    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
+</p>
 
-[//]: # (    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">)
-
-[//]: # (</p>)
-
-<img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
-
-# GitHub Actions for JetBrains IDEs
+<div align="center">
+  <h1>GitHub Actions for JetBrains IDEs</h1>
+</div>
 
 [//]: # ()
 [//]: # ([//]: # &#40;&#41;)

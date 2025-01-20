@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <style>
+        @media (prefers-color-scheme: dark) {
+            .light-logo { display: none; }
+            .dark-logo { display: block; }
+        }
+        @media (prefers-color-scheme: light) {
+            .light-logo { display: block; }
+            .dark-logo { display: none; }
+        }
+    </style>
+    <g class="light-logo">
+        <path d="M37.55 17.8801L10.75 30.9701V26.5201M10.75 26.5201L28.6484 17.7701L10.75 9.03003V17.6498V26.5201Z" stroke="black"/>
+        <path d="M6.75 2.625V37.375M6.75 2.625L2.75 6.1V33.9L6.75 37.375M6.75 2.625L37.25 17.51V22.48L6.75 37.375" stroke="black"/>
+        <path d="M10.7148 13.4648L24.1367 20.0195" stroke="black"/>
+    </g>
+    <g class="dark-logo">
+        <path d="M37.55 17.8801L10.75 30.9701V26.5201M10.75 26.5201L28.6484 17.7701L10.75 9.03003V17.6498V26.5201Z" stroke="white"/>
+        <path d="M6.75 2.625V37.375M6.75 2.625L2.75 6.1V33.9L6.75 37.375M6.75 2.625L37.25 17.51V22.48L6.75 37.375" stroke="white"/>
+        <path d="M10.7148 13.4648L24.1367 20.0195" stroke="white"/>
+    </g>
+</svg>

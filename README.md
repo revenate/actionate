@@ -1,9 +1,13 @@
 
-<p align="center">
-    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">
-</p>
+[//]: # (<p align="center">)
 
-# Actionate - GitHub Actions for JetBrains IDEs
+[//]: # (    <img src="docs/media/actionate.svg" alt="Actionate Logo" width="100" height="100">)
+
+[//]: # (</p>)
+
+<img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
+
+# GitHub Actions for JetBrains IDEs
 
 __Actionate__ brings the power of GitHub Actions directly into your JetBrains IDE, creating a unified, all-in-one
 environment for your development flow. This seamless integration eliminates context-switching and boosts productivity,

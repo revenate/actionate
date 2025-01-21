@@ -7,6 +7,8 @@ __Actionate__ brings the power of GitHub Actions directly into your JetBrains ID
 environment for your development flow. This seamless integration eliminates context-switching and boosts productivity,
 so you can focus on what matters most.
 
+![demo](docs/media/actionate.gif)
+
 ### Contents
 
 - [Features](#features)

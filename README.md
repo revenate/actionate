@@ -17,6 +17,7 @@ so you can focus on what matters most.
   - [Manually Trigger Workflow Runs](#manually-trigger-workflow-runs)
 - [Getting Started](#getting-started)
 - [Support](#support)
+- [Screenshots](#screenshots)
 
 ## Features
 

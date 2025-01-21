@@ -158,4 +158,24 @@ We offer the following issue templates to help you get started:
 
 - __Support Request:__ If you need troubleshooting help or additional information, please use this template to outline your request.
 
-If you need troubleshooting help or additional information, please use this template to outline your request.
+We’re committed to improving Actionate and appreciate your contributions!
+
+## Screenshots
+
+![workflow runs](docs/media/workflow-runs.png)
+
+![filtered workflow runs](docs/media/filtered-workflow-runs.png)
+
+![run summary](docs/media/run-summary.png)
+
+![run job](docs/media/run-job.png)
+
+![run job step logs](docs/media/run-job-step-logs.png)
+
+![rerun](docs/media/rerun.png)
+
+![rerun in progress](docs/media/rerun-in-progress.png)
+
+![rerun attempt picker](docs/media/run-attempt-picker.png)
+
+![manual run](docs/media/manual-run.png)

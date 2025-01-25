@@ -138,17 +138,28 @@ with custom inputs and tailored configurations right from your JetBrains IDE.
 
 Getting started with Actionate is easy and only requires a few simple steps:
 
-1. Install the Actionate plugin in your preferred JetBrains IDE. For detailed plugin installation instruction, you
-   can refer to the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html)
+1. __Install the Actionate plugin__
 
-2. Add a GitHub Account. Actionate integrates with the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html). 
-   To use it, add your GitHub account by navigating to `Settings` -> `GitHub` and following the instructions to 
-   authenticate with your GitHub account.
+   Install Actionate in your preferred JetBrains IDE. For detailed plugin installation instruction, refer to 
+   the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html)
 
-   __Note:__ Some organizations restrict the permissions of the JetBrains GitHub integration token, which may cause
+2. __Add a GitHub Account__
+   
+   Actionate integrates with the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html). To use it, add your GitHub account by navigating to 
+   `Settings -> GitHub` and follow the instructions to authenticate with your GitHub account.
+
+   __Note:__ Some organizations restrict permissions for the JetBrains GitHub integration token, which may cause
    unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the
-   `Login in with Token` option. The token requires repo scope. We are working on a way to automatically detect this
-   situation and inform users when a PAT is required.
+   `Login in with Token` option. The token requires the `repo` scope. If your organization uses Single Sign-On (SSO), 
+   ensure that you authorize SSO access for your PAT to avoid authentication issues. We're working on an automatic 
+   detection feature to notify users when a PAT is required.
+
+3. __Workflow Detection__
+
+   Actionate automatically detects the GitHub repository associated with your open JetBrains project by examining the 
+   project's Git configuration.
+   - If you don't see any workflows listed, it's likely because the open project is either not a GitHub repository or no workflows are currently associated with it.
+   - If you'd prefer to manually set the repository instead of relying on automatic detection, please let us know by opening a `Feature Request` issue.
 
 ## Support
 

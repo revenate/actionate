@@ -1,5 +1,7 @@
 
-<img src="docs/media/actionate-t-1.svg" alt="Actionate Logo" width="378" height="74">
+[//]: # (<img src="docs/media/actionate-t-1.svg" alt="Actionate Logo" width="378" height="74">)
+
+![GitHub-Mark-Light](docs/media/actionate-dark.svg#gh-dark-mode-only)![GitHub-Mark-Dark](docs/media/actionate-light.svg#gh-light-mode-only)
 
 # GitHub Actions for JetBrains IDEs
 

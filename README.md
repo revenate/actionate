@@ -1,5 +1,5 @@
 
-<img src="docs/media/actionate.svg" alt="Actionate Logo" width="378" height="74">
+<img src="docs/media/actionate-t-1.svg" alt="Actionate Logo" width="378" height="74">
 
 # GitHub Actions for JetBrains IDEs
 
@@ -12,18 +12,14 @@ and workflows not possible in the browser alone.
 
 ![demo](docs/media/actionate.gif)
 
-### Contents
+## Why Actionate?
 
-- [Features](#features)
-  - [Works with multiple GitHub Accounts](#works-with-multiple-github-accounts)
-  - [View Workflow Runs](#view-workflow-runs)
-  - [View Comprehensive Workflow Run Details](#view-comprehensive-workflow-run-details)
-  - [Rerun Workflow Runs](#rerun-workflow-runs)
-  - [Manually Trigger Workflow Runs](#manually-trigger-workflow-runs)
-- [Coming Soon](#-coming-soon)
-- [Getting Started](#getting-started)
-- [Support](#support)
-- [Screenshots](#screenshots)
+Actionate pulls GitHub Actions out of the browser and into your JetBrains IDE, so you can stop juggling multiple tabs 
+and chasing down workflow runs. Early beta testers report __saving 5 to 10 minutes per Git push__ and 
+__cutting troubleshooting time by up to 25%__. Our mission is to create the best possible experience for you and 
+transform what's possible with GitHub Actions and JetBrains IDEs. We genuinely value your feedback, and invite you to 
+help shape our roadmap by sharing your ideas and voting on new features in GitHub Discussions *Revisit.
+
 
 ## Features
 

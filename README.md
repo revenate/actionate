@@ -6,13 +6,16 @@
 
 __Actionate__ pulls GitHub Actions out of the browser and into your JetBrains IDE, eliminating costly browser context 
 switching and supercharging your CI/CD workflow. Early beta testers report saving __5 to 10 minutes__ per Git push and
-cutting troubleshooting time by __up to 25%__. Our mission is to create the best possible experience for you by 
-harnessing the power of JetBrains IDEs to transform what's possible with GitHub Actions, unlocking advanced features 
-and workflows that are not possible in the browser alone. We genuinely value your feedback, and invite you to
-help shape our roadmap by sharing your ideas and voting on new features.
+cutting troubleshooting time by __up to 25%__.
 
 ![demo](docs/media/actionate.gif)
 
+## Why Actionate?
+
+Our mission is to create the best possible experience for you by harnessing the power of JetBrains IDEs to transform 
+what's possible with GitHub Actions, unlocking advanced features and workflows that are not possible in the browser 
+alone. We genuinely value your feedback, and invite you to help shape our roadmap by sharing your ideas and voting on 
+new features.
 
 ## Features
 

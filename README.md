@@ -1,23 +1,17 @@
 
-
 ![Actionate Dark](docs/media/actionate-dark.svg#gh-dark-mode-only)![Actionate Light](docs/media/actionate-light.svg#gh-light-mode-only)
 
 [![Current Version](https://img.shields.io/jetbrains/plugin/v/26365?label=Current%20Version&labelColor=2B2D42&color=1E88E5&style=flat)](https://plugins.jetbrains.com/plugin/26365)
 [![Get from Marketplace](https://img.shields.io/badge/Get%20from%20Marketplace-6600CC?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0ibm9uZSI%2BCiAgICA8cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMjIuMTQgMEg1OWMyLjc2IDAgNSAyLjI0IDUgNXYzNi44NmMwIDIuNjUtMS4wNTUgNS4xOTUtMi45MyA3LjA3TDQ4LjkzIDYxLjA3Yy0xLjg3NTEgMS44NzUyLTQuNDE4MSAyLjkyOTEtNy4wNyAyLjkzSDVjLTIuNzYgMC01LTIuMjQtNS01VjIyLjE0YzAtMi42NSAxLjA1NS01LjE5NSAyLjkzLTcuMDdMMTUuMDcgMi45M0MxNi45NDUxIDEuMDU0NzkgMTkuNDg4MS4wMDA4OTU3NiAyMi4xNCAwWiIvPgogICAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTUyIDEySDZ2NDZoNDZWMTJaIi8%2BCiAgICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTAgNTFoMTZ2M0gxMHoiLz4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjEiIHgyPSI2Mi43NSIgeTE9IjYzIiB5Mj0iMS4yNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkY5NDE5Ii8%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iLjQzIiBzdG9wLWNvbG9yPSIjRkYwMjFEIi8%2BCiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iLjk5IiBzdG9wLWNvbG9yPSIjRTYwMEZGIi8%2BCiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KPC9zdmc%2B)](https://plugins.jetbrains.com/plugin/26365)
 
-__Actionate__ integrates GitHub Actions directly into your JetBrains IDE, eliminating costly browser context switching 
-and supercharging your CI/CD workflow. Our mission is to harness the power of JetBrains IDEs to unlock advanced features 
-and workflows not possible in the browser alone.
+__Actionate__ pulls GitHub Actions out of the browser and into your JetBrains IDE, eliminating costly browser context 
+switching and supercharging your CI/CD workflow. Early beta testers report saving __5 to 10 minutes__ per Git push and
+cutting troubleshooting time by __up to 25%__. Our mission is to create the best possible experience for you by 
+harnessing the power of JetBrains IDEs to transform what's possible with GitHub Actions, unlocking advanced features 
+and workflows that are not possible in the browser alone. We genuinely value your feedback, and invite you to
+help shape our roadmap by sharing your ideas and voting on new features.
 
 ![demo](docs/media/actionate.gif)
-
-## Why Actionate?
-
-Actionate pulls GitHub Actions out of the browser and into your JetBrains IDE, so you can stop juggling multiple tabs 
-and chasing down workflow runs. Early beta testers report __saving 5 to 10 minutes per Git push__ and 
-__cutting troubleshooting time by up to 25%__. Our mission is to create the best possible experience for you and 
-transform what's possible with GitHub Actions and JetBrains IDEs. We genuinely value your feedback, and invite you to 
-help shape our roadmap by sharing your ideas and voting on new features in GitHub Discussions *Revisit.
 
 
 ## Features

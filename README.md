@@ -29,7 +29,7 @@ Get a real-time view of both current and past workflow runs right inside your Je
   Monitor in-progress runs in real time and review completed ones at a glance.
 
 - __Powerful Filtering__\
-  Filter runs by branch, actor, event, or status—either individually or in combination—to quickly find exactly what you need.
+  Filter runs by branch, actor, event, or status, either individually or in combination, to quickly find exactly what you need.
 
 - __Automatic Discovery__\
   New runs appear automatically, so you always have up-to-date information with zero extra clicks.
@@ -59,11 +59,30 @@ inside your JetBrains IDE, so you can troubleshoot issues and manage everything 
   See every step in a job along with its status, making it easy to track progress and identify issues.
 
 - __Logs__\
-  View all logs for a run, complete with collapsible log groups and color-coded notices, warnings, and errors. 
-  Right-click any line to copy its text, copy a direct link (perfect for sharing with teammates), or open it in the browser.
+  View all logs for a run, complete with collapsible log groups, color-coded notices, warnings, and errors, and 
+  automatic link detection so you can open referenced URLs in your browser with a single click. Right-click any line to 
+  copy its text, copy a direct link (perfect for sharing with teammates), or open it in the browser.
 
 - __Run Attempts__\
   View all attempts for a run, making it simple to compare multiple executions and track changes over time.
+
+### Rerun Workflow Runs
+
+Rerun all jobs or just the failed ones, with optional debug logging for deeper insights, so you can fix issues without 
+starting a new run from scratch.
+
+![rerun demo](docs/media/rerun-demo.gif)
+
+- __Rerun All Jobs__\
+  Restart the entire workflow.
+
+- __Rerun Failed Jobs__\
+  Focus only on jobs that encountered errors, saving time and resources.
+
+- __Enable Debug Logging__\
+  Turn on debug logs before re-triggering for deeper insights into your workflow runs.
+
+
 
 
 
@@ -94,20 +113,7 @@ unexpected issues. If you encounter problems, try logging in with a [classic Per
 `Login in with Token` option. The token requires repo scope. We are working on a way to automatically detect this 
 situation and inform users when a PAT is required.
 
-### Rerun Workflow Runs
 
-Actionate provides you with the ability to rerun a workflow run, allowing you to quickly re-trigger jobs to resolve 
-issues or retry builds without needing to manually start a new workflow. Whether you’re dealing with a failed job or 
-want to rerun the entire workflow, Actionate makes it seamless to get things running again.
-
-- __Rerun All Jobs:__ You can easily rerun all the jobs within a workflow run.
-
-- __Rerun Failed Jobs:__ If only certain jobs failed, you can opt to rerun just the failed jobs. This saves you time 
-  and resources by skipping the jobs that were successful, allowing you to focus on the issues at hand.
-
-Each rerun is treated as a new run attempt, allowing you to view fresh logs, step statuses, and artifacts. Actionate’s 
-rerun feature allows you to quickly iterate and address issues in your workflows, making it easier to keep your build 
-process smooth and efficient.
 
 ### Manually Trigger Workflow Runs
 

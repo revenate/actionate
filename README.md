@@ -8,7 +8,7 @@ __Actionate__ pulls GitHub Actions out of the browser and into your JetBrains ID
 switching and supercharging your CI/CD workflow. Early beta testers report saving __5 to 10 minutes__ per Git push and
 cutting troubleshooting time by __up to 25%__.
 
-![demo](docs/media/actionate.gif)
+![actionate demo](docs/media/actionate.gif)
 
 ## Why Actionate?
 
@@ -17,8 +17,87 @@ what's possible with GitHub Actions, unlocking advanced features and workflows t
 alone. We genuinely value your feedback, and invite you to help shape our roadmap by sharing your ideas and voting on 
 new features.
 
-
 ## Features
+
+### View Workflow Runs
+
+Get a real-time view of both current and past workflow runs right inside your JetBrains IDE.
+
+![workflow runs demo](docs/media/workflow-runs-demo.gif)
+
+- __Current and Past Runs__\
+  Monitor in-progress runs in real time and review completed ones at a glance.
+
+- __Powerful Filtering__\
+  Filter runs by branch, actor, event, or status—either individually or in combination—to quickly find exactly what you need.
+
+- __Automatic Discovery__\
+  New runs appear automatically, so you always have up-to-date information with zero extra clicks.
+
+### View Comprehensive Workflow Run Details
+
+View every detail of any workflow run including jobs, steps, logs, artifacts, annotations, and all run attempts directly 
+inside your JetBrains IDE, so you can troubleshoot issues and manage everything in one place.
+
+![workflow run demo](docs/media/workflow-run-demo.gif)
+
+- __Run Metadata__\
+  View details like overall status, triggering event, triggering actor, duration, associated pull request, commit, branch, 
+  and the workflow file used.
+
+- __Annotations__\
+  Check run-level or job-level annotations directly in the IDE, and use automatically discovered links to open any 
+  referenced URLs in your browser with a single click.
+
+- __Artifacts__\
+  View all artifacts produced by a run, with the option to download and open each one directly in your IDE.
+
+demo:
+- show summary page
+- show open run in browser
+- show metadata
+- show expanding annotation
+- show clicking on links opens them in browser
+- show artifact download / view
+- show Build Project job
+- show open job in browser
+- show set up job step
+- expand / collapse operating system
+- expand runner image
+- click on included software link
+- click on build project
+- right click on Notice to show context menu
+- click on Run Integration Tests step
+- click on attempt picker
+- select first attempt
+- from summary click on build project
+- Click on Run Integration tests step to show error highlighting
+
+
+View run metadata, such as overall status, the event that triggered the run, duration of run, actor that triggered the run,
+the pull request associated with a run (if present), the commit used during the run, the branch the run was executed from,
+and the workflow flow that was used for the run
+
+- __Job and Step Breakdown:__ See each job and its corresponding steps within a workflow run, with detailed information
+  on each step’s status, logs, and execution time.
+
+- __Logs and Annotations:__ View logs for individual jobs and steps, along with any annotations that provide additional
+  context, such as warnings, errors, or notices, making it easier to identify and address issues.
+
+- __Artifacts and Build Reports:__ Access and download artifacts generated during the workflow run, such as build
+  outputs, test results, or reports. This allows you to examine the results in detail without leaving the IDE.
+
+- __Run Metadata:__ View and open key details such as commit, branch, pull request, and workflow file associated with a run.
+
+- __Interactive Log Navigation:__ Navigate logs easily with expandable log groups, log message color formatting (notice, warning, error),
+  and the ability to open specific log lines directly in GitHub for further investigation.
+    - __Copy Link to Log Line:__ Copy the link to any specific log line in GitHub to easily share it with colleagues.
+      This ensures that everyone is looking at the same information, making collaboration and troubleshooting more efficient.
+
+- __View All Run Attempts:__ View comprehensive details for __all__ run attempts.
+
+- cancel in progress run
+
 
 ### Works with multiple GitHub Accounts
 
@@ -46,48 +125,6 @@ __Note:__ Some organizations restrict the permissions of the JetBrains GitHub in
 unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the 
 `Login in with Token` option. The token requires repo scope. We are working on a way to automatically detect this 
 situation and inform users when a PAT is required.
-
-### View Workflow Runs
-
-With Actionate, you can easily view both current and past workflow runs, directly within your JetBrains IDE. Whether 
-you’re monitoring the progress of a new run or reviewing historical executions, Actionate provides a streamlined way to 
-access all relevant information.
-
-- __Current and Past Workflow Runs:__ View the status, jobs, steps, logs, annotations, and artifacts of both ongoing and completed workflows.
-
-- __Automatic Discovery:__ New workflow runs are automatically discovered and shown in the IDE without requiring you to 
-  manually refresh. This ensures you always have up-to-date information about your workflows.
-
-- __Comprehensive Details:__ Dive deep into each workflow run to examine job statuses, view individual step outputs, and 
-  inspect logs to troubleshoot or analyze build performance.
-
-- __Powerful Filtering:__ Easily filter workflow runs by branch, actor, event, and status, allowing you to quickly find 
-  the specific runs you need. Whether you’re looking for a run triggered by a specific person, on a particular branch, 
-  or based on a certain event type, Actionate makes it simple to narrow down your results.
-
-### View Comprehensive Workflow Run Details
-
-Actionate makes it easy to dive deep into the specifics of any workflow run. With detailed insights into each run, you 
-can analyze performance, troubleshoot issues, or simply monitor the execution of your workflows—all directly from your 
-JetBrains IDE.
-
-- __Job and Step Breakdown:__ See each job and its corresponding steps within a workflow run, with detailed information 
-  on each step’s status, logs, and execution time.
-
-- __Logs and Annotations:__ View logs for individual jobs and steps, along with any annotations that provide additional 
-  context, such as warnings, errors, or notices, making it easier to identify and address issues.
-
-- __Artifacts and Build Reports:__ Access and download artifacts generated during the workflow run, such as build 
-  outputs, test results, or reports. This allows you to examine the results in detail without leaving the IDE.
-
-- __Run Metadata:__ View and open key details such as commit, branch, pull request, and workflow file associated with a run.
-
-- __Interactive Log Navigation:__ Navigate logs easily with expandable log groups, log message color formatting (notice, warning, error), 
-  and the ability to open specific log lines directly in GitHub for further investigation.
-    - __Copy Link to Log Line:__ Copy the link to any specific log line in GitHub to easily share it with colleagues. 
-      This ensures that everyone is looking at the same information, making collaboration and troubleshooting more efficient.
-
-- __View All Run Attempts:__ View comprehensive details for __all__ run attempts.
 
 ### Rerun Workflow Runs
 

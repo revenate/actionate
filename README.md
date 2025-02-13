@@ -52,51 +52,19 @@ inside your JetBrains IDE, so you can troubleshoot issues and manage everything 
 - __Artifacts__\
   View all artifacts produced by a run, with the option to download and open each one directly in your IDE.
 
-demo:
-- show summary page
-- show open run in browser
-- show metadata
-- show expanding annotation
-- show clicking on links opens them in browser
-- show artifact download / view
-- show Build Project job
-- show open job in browser
-- show set up job step
-- expand / collapse operating system
-- expand runner image
-- click on included software link
-- click on build project
-- right click on Notice to show context menu
-- click on Run Integration Tests step
-- click on attempt picker
-- select first attempt
-- from summary click on build project
-- Click on Run Integration tests step to show error highlighting
+- __Jobs__\
+  View all jobs in a run and their corresponding status at a glance, so you can spot successes or failures instantly.
 
+- __Steps__\
+  See every step in a job along with its status, making it easy to track progress and identify issues.
 
-View run metadata, such as overall status, the event that triggered the run, duration of run, actor that triggered the run,
-the pull request associated with a run (if present), the commit used during the run, the branch the run was executed from,
-and the workflow flow that was used for the run
+- __Logs__\
+  View all logs for a run, complete with collapsible log groups and color-coded notices, warnings, and errors. 
+  Right-click any line to copy its text, copy a direct link (perfect for sharing with teammates), or open it in the browser.
 
-- __Job and Step Breakdown:__ See each job and its corresponding steps within a workflow run, with detailed information
-  on each step’s status, logs, and execution time.
+- __Run Attempts__\
+  View all attempts for a run, making it simple to compare multiple executions and track changes over time.
 
-- __Logs and Annotations:__ View logs for individual jobs and steps, along with any annotations that provide additional
-  context, such as warnings, errors, or notices, making it easier to identify and address issues.
-
-- __Artifacts and Build Reports:__ Access and download artifacts generated during the workflow run, such as build
-  outputs, test results, or reports. This allows you to examine the results in detail without leaving the IDE.
-
-- __Run Metadata:__ View and open key details such as commit, branch, pull request, and workflow file associated with a run.
-
-- __Interactive Log Navigation:__ Navigate logs easily with expandable log groups, log message color formatting (notice, warning, error),
-  and the ability to open specific log lines directly in GitHub for further investigation.
-    - __Copy Link to Log Line:__ Copy the link to any specific log line in GitHub to easily share it with colleagues.
-      This ensures that everyone is looking at the same information, making collaboration and troubleshooting more efficient.
-
-- __View All Run Attempts:__ View comprehensive details for __all__ run attempts.
-
-- cancel in progress run
 
 
 ### Works with multiple GitHub Accounts

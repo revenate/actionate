@@ -161,7 +161,7 @@ We offer the following issue templates to help you get started:
 - __Feature Request__\
   If you have a suggestion for a new feature or enhancement, we'd love to hear it! Use this template to describe your idea.
 
-- __Support Request__\ 
+- __Support Request__\
   If you need troubleshooting help or additional information, please use this template to outline your request.
 
 ## What's Next?
@@ -187,7 +187,7 @@ __Enhanced Log Formatting__
 Display logs with full support for ANSI color codes and other formatting improvements, ensuring a visually rich, 
 easy-to-read output for efficient debugging and analysis.
 
-- __Manage Environments, Variables, and Secrets__
+__Manage Environments, Variables, and Secrets__
 
 Manage repository environments, Actions variables, and secrets directly from your IDE, with auto-complete support for 
 those values when authoring workflow files.

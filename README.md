@@ -82,62 +82,71 @@ starting a new run from scratch.
 - __Enable Debug Logging__\
   Turn on debug logs before re-triggering for deeper insights into your workflow runs.
 
+### Manually Run Workflow
 
+Trigger new runs for workflows that use the `workflow_dispatch` event trigger, complete with full support for all input 
+parameter types, so you can customize and start jobs on-demand, right from your JetBrains IDE.
 
+![manual run demo](docs/media/manual-run-demo.gif)
 
+- __Trigger Any Dispatch-Ready Workflow__\
+  Manually run any workflow that defines the `workflow_dispatch` event as a trigger.
 
-### Works with multiple GitHub Accounts
+- __Ref Picker__\
+  Choose the branch or tag you want to run the workflow from.
 
-Actionate makes it easy to use multiple GitHub accounts. You can set a default account that will be used across all 
-your projects, or configure a specific account for each project.
+- __Input Parameters__\
+  Retrieve and populate all defined inputs for the selected ref, with full support for every parameter 
+  type and respect for default values set in your workflow file.
 
-- __Default Account:__ Choose one account that Actionate will automatically use for all projects. This account will be 
-  used unless explicitly overridden by a project-specific setting.
+- __Input Validation__\
+  Required parameters must have a value before the workflow can be triggered, ensuring no critical inputs are overlooked.
 
-- __Project-Specific Accounts:__ For added flexibility, you can set a unique GitHub account for each project. 
-  This allows you to seamlessly switch between different accounts without the need for manual reconfiguration.
+> [!NOTE]
+> Only workflows that use the `workflow_dispatch` event trigger are manually runnable.
 
-If you have only one GitHub account added, that account will automatically be used.
+### Multi-Account Support
 
-If multiple accounts are added and no default or project-specific account is set, you will be prompted to choose which 
-account to use on first use.
+Leveraging the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) for account management, you 
+can seamlessly work with multiple GitHub accounts. Set a global default or assign a unique account to each project for 
+maximum flexibility.
 
-Actionate leverages the JetBrains GitHub plugin for GitHub account management. For more details on managing your
-accounts, check out the [JetBrains GitHub plugin documentation](https://www.jetbrains.com/help/idea/github.html).
+![multi-account demo](docs/media/multi-account-demo.gif)
 
-To set the GitHub account for Actionate to use, go to `Actionate` -> `Settings` -> `Account` and select from the
-available accounts sourced from the JetBrains GitHub plugin.
+- __JetBrains GitHub Plugin Integration__\
+  Account management is powered by the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) to 
+  seamlessly handle multiple GitHub accounts.
 
-__Note:__ Some organizations restrict the permissions of the JetBrains GitHub integration token, which may cause 
-unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the 
-`Login in with Token` option. The token requires repo scope. We are working on a way to automatically detect this 
-situation and inform users when a PAT is required.
+- __Project-Specific Account Assignment__\
+  Assign a dedicated GitHub account to each project. Once set, your configuration is saved, so you only need to assign 
+  it once. You can update the assignment at any time by choosing a different active account in Actionate's settings.
 
+## Getting Started
 
+__Step 1: Install Actionate__
 
-### Manually Trigger Workflow Runs
+Start by installing Actionate and enjoy a 7-day free trial to explore its full range of features with no commitment.
+After the trial, continue using the plugin for only \$1 per month or \$10 per year. For detailed installation instructions,
+refer to the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
-With Actionate, you can manually trigger a new workflow run for workflows that include the workflow_dispatch trigger. 
-This feature provides full support for all input parameters defined in the workflow, allowing you to customize and 
-initiate new runs whenever you need.
+__Step 2: Add a GitHub Account__
 
-- __Trigger Workflows with Workflow Dispatch:__ Easily manually trigger workflows that have the workflow_dispatch trigger 
-  enabled, providing full flexibility to initiate builds or processes on-demand.
+Actionate leverages the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) for account management.
+If no GitHub account is found, you'll be prompted to add one on first launch. Click `add account` and follow the 
+instructions to authenticate and add your account.
 
-- __Support for Input Parameters:__ Actionate fully supports all input parameter types defined in your workflow’s 
-  workflow_dispatch trigger. Whether it’s a simple text field, a choice, or a boolean, you can provide the necessary 
-  inputs when triggering a run.
+> [!NOTE]
+> GitHub organizations can restrict the permissions of the JetBrains GitHub integration token, which can lead to issues.
+> If you encounter problems, try logging in with a [classic Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
+> via the `Login with Token` option (ensure the token has repo scope). If your organization uses SSO, your PAT
+> may need to be SSO authorized. We're working on automatically detecting this situation and notifying users when a PAT is needed.
 
-- __Ref Picker:__ Select which Git reference (branch or tag) to trigger the workflow from. Actionate automatically 
-  retrieves the available input parameters for each reference, ensuring that you’re using the correct parameters for 
-  your selected ref.
+__Step 3: Start Using Actionate__
 
-- __Customizable and On-Demand:__ With manual triggers, you can start workflows as needed, giving you more control over 
-  your CI/CD process. Whether for testing, re-deployments, or special cases, you have the flexibility to trigger 
-  workflows on your terms.
+Actionate automatically detects the GitHub repository for your open JetBrains project by reading its Git configuration.
+If you see `no workflows`, it's likely because the project is not a GitHub repository or has no workflows defined.
 
-Actionate’s support for workflow_dispatch gives you greater control over your workflows, allowing you to initiate runs 
-with custom inputs and tailored configurations right from your JetBrains IDE.
+![getting started demo](docs/media/getting-started-demo.gif)
 
 ## 🚀 Coming Soon
 
@@ -178,32 +187,6 @@ JetBrains IDE? No idea is too big, too small, or too weird.
 Drop us a feature request or just say hi—we'd be thrilled to build something that makes your workflow smoother and
 your day a little easier.
 
-## Getting Started
-
-Getting started with Actionate is easy and only requires a few simple steps:
-
-1. __Install the Actionate plugin__
-
-   Install Actionate in your preferred JetBrains IDE. For detailed plugin installation instruction, refer to 
-   the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html)
-
-2. __Add a GitHub Account__
-   
-   Actionate integrates with the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html). To use it, add your GitHub account by navigating to 
-   `Settings -> GitHub` and follow the instructions to authenticate with your GitHub account.
-
-   __Note:__ Some organizations restrict permissions for the JetBrains GitHub integration token, which may cause
-   unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the
-   `Login in with Token` option. The token requires the `repo` scope. If your organization uses Single Sign-On (SSO), 
-   ensure that you authorize SSO access for your PAT to avoid authentication issues. We're working on an automatic 
-   detection feature to notify users when a PAT is required.
-
-3. __Workflow Detection__
-
-   Actionate automatically detects the GitHub repository associated with your open JetBrains project by examining the 
-   project's Git configuration.
-   - If you don't see any workflows listed, it's likely because the open project is either not a GitHub repository or no workflows are currently associated with it.
-   - If you'd prefer to manually set the repository instead of relying on automatic detection, please let us know by opening a `Feature Request` issue.
 
 ## Support
 

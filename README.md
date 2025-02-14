@@ -148,78 +148,52 @@ If you see `no workflows`, it's likely because the project is not a GitHub repos
 
 ![getting started demo](docs/media/getting-started-demo.gif)
 
-## 🚀 Coming Soon
-
-We’re always looking for ways to improve Actionate, and we're thrilled to share what's coming in the next few immediate
-releases. These features are designed to make your GitHub Actions experience inside JetBrains IDEs even smoother and
-more powerful. And this is just the beginning. We've got tons more in the pipeline, and we'd love to hear your ideas too!
-
-### What's Next?
-
-Here's what you can expect very soon:
-
-- __Graceful Handling of Extremely Long Logs__
-
-  Say goodbye to sluggish scrolling, freezing, and those "Oops, something unexpected happened" errors—yeah, we probably
-  should have paginated large logs from the start... our bad.
-
-- __Log Search__
-
-  Ever tried finding that one failing test buried in 70,000 lines of logs? We've got you covered. A powerful search
-  feature is on the way to help you locate exactly what you need—no more manual scrolling marathons.
-
-- __Richer Log Formatting__
-
-  We're adding support for ANSI color codes and other enhancements to bring your logs to life.
-
-- __Managing Actions Environments, Variables, and Secrets__
-
-  You'll soon be able to handle all your environment variables and secrets directly from the IDE. Even better,
-  Actionate will auto-complete those values when you're authoring workflow files—so no more worrying about
-  fat-fingering a hardcoded string again.
-
-### But Wait, There (Will) Be More...
-
-These are just the next features we're rolling out. We have a huge list of exciting ideas for the future. And honestly?
-We'd love your input. We want to hear from you! What would make the perfect GitHub Actions workflow inside your
-JetBrains IDE? No idea is too big, too small, or too weird.
-
-Drop us a feature request or just say hi—we'd be thrilled to build something that makes your workflow smoother and
-your day a little easier.
-
-
 ## Support
 
-If you’re experiencing unexpected behavior or have an idea for a new feature or enhancement, please don’t hesitate to 
-create an issue in this repository. Your feedback is important to us!
+If you encounter any issues or have suggestions for improvements, please create an issue in this repository. Your 
+feedback is invaluable!
 
 We offer the following issue templates to help you get started:
 
-- __Bug Report:__ If something is not working as expected, please use this template to provide details about the issue.
+- __Bug Report__\
+  If something is not working as expected, please use this template to provide details about the issue.
 
-- __Feature Request:__ If you have a suggestion for a new feature or enhancement, we’d love to hear it! Use this 
-  template to describe your idea.
+- __Feature Request__\
+  If you have a suggestion for a new feature or enhancement, we'd love to hear it! Use this template to describe your idea.
 
-- __Support Request:__ If you need troubleshooting help or additional information, please use this template to outline your request.
+- __Support Request__\ 
+  If you need troubleshooting help or additional information, please use this template to outline your request.
 
-We’re committed to improving Actionate and appreciate your contributions!
+## What's Next?
 
-## Screenshots
+__Support Extremely Long Logs__
 
-![workflow runs](docs/media/workflow-runs.png)
+Actionate currently handles 99% of logs seamlessly. However, extremely long logs trigger an 
+`Oops, something unexpected happened` error. The Actions Web UI can't currently handle these extremely long logs either, 
+you're prompted to download the raw logs instead. This upcoming enhancement will ensure that all logs, regardless of 
+size, are fully supported.
 
-![filtered workflow runs](docs/media/filtered-workflow-runs.png)
+__Log Search__
 
-![run summary](docs/media/run-summary.png)
+Quickly locate specific entries in your logs without manual scrolling, just enter a search term to instantly find what 
+you need.
 
-![run job](docs/media/run-job.png)
+__Smart Log Navigation__
 
-![run job step logs](docs/media/run-job-step-logs.png)
+Easily jump to the beginning or end of your logs, or directly to notices, warnings, and errors, for a more streamlined experience.
 
-![rerun](docs/media/rerun.png)
+__Enhanced Log Formatting__
 
-![rerun in progress](docs/media/rerun-in-progress.png)
+Display logs with full support for ANSI color codes and other formatting improvements, ensuring a visually rich, 
+easy-to-read output for efficient debugging and analysis.
 
-![rerun attempt picker](docs/media/run-attempt-picker.png)
+- __Manage Environments, Variables, and Secrets__
 
-![manual run](docs/media/manual-run.png)
+Manage repository environments, Actions variables, and secrets directly from your IDE, with auto-complete support for 
+those values when authoring workflow files.
+
+### But Wait, There (Will) Be More
+
+These are just the next immediate features we have planned. We have a huge list of exciting ideas for the future. And
+honestly, we'd love your input! Drop us a feature request or just say hi, we'd be thrilled to build something that makes
+your workflow smoother and your day a little easier.

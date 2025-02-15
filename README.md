@@ -170,7 +170,7 @@ We offer the following issue templates to help you get started:
 __Support Extremely Long Logs__
 
 Actionate currently handles 99% of logs seamlessly. However, extremely long logs trigger an 
-`Oops, something unexpected happened` error. The Actions Web UI can't currently handle these extremely long logs either, 
+`Oops, something unexpected happened` error. The Actions Web UI can't currently handle extremely long logs either,
 you're prompted to download the raw logs instead. This upcoming enhancement will ensure that all logs, regardless of 
 size, are fully supported.
 
@@ -188,10 +188,31 @@ __Enhanced Log Formatting__
 Display logs with full support for ANSI color codes and other formatting improvements, ensuring a visually rich, 
 easy-to-read output for efficient debugging and analysis.
 
+__Open Project Files Referenced in Logs__
+
+Automatically detect project files references in your logs and convert them into clickable links that open directly in 
+your IDE. This mirrors our existing browser link detection, streamlining navigation and boosting productivity during debugging.
+
 __Manage Environments, Variables, and Secrets__
 
 Manage repository environments, Actions variables, and secrets directly from your IDE, with auto-complete support for 
 those values when authoring workflow files.
+
+__Auto-Rerun__
+
+Automatically rerun failed workflow runs with a customizable retry limit, ensuring your processes have a chance to
+recover without risking endless loops.
+
+__Workflow Run Notifications__
+
+Subscribe to workflow runs to receive native JetBrains IDE notifications when they complete, along with their status,
+so you don’t have to constantly monitor progress.
+
+__Run Config Integration__
+
+Integrate workflow execution with your IDE's native run configuration system. Run workflows like projects or tests,
+with custom input parameters that let you create and persist multiple configurations. Quickly execute the same workflow 
+with different inputs, share configurations with your team, and even chain run configs together for powerful automations.
 
 ### But Wait, There (Will) Be More
 

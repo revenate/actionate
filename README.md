@@ -8,7 +8,7 @@ __Actionate__ pulls GitHub Actions out of the browser and into your JetBrains ID
 switching and supercharging your CI/CD workflow. Early beta testers report saving __5 to 10 minutes__ per Git push and
 cutting troubleshooting time by __up to 25%__.
 
-![demo](docs/media/actionate.gif)
+![actionate demo](docs/media/actionate.gif)
 
 ## Why Actionate?
 
@@ -20,212 +20,181 @@ new features.
 
 ## Features
 
-### Works with multiple GitHub Accounts
-
-Actionate makes it easy to use multiple GitHub accounts. You can set a default account that will be used across all 
-your projects, or configure a specific account for each project.
-
-- __Default Account:__ Choose one account that Actionate will automatically use for all projects. This account will be 
-  used unless explicitly overridden by a project-specific setting.
-
-- __Project-Specific Accounts:__ For added flexibility, you can set a unique GitHub account for each project. 
-  This allows you to seamlessly switch between different accounts without the need for manual reconfiguration.
-
-If you have only one GitHub account added, that account will automatically be used.
-
-If multiple accounts are added and no default or project-specific account is set, you will be prompted to choose which 
-account to use on first use.
-
-Actionate leverages the JetBrains GitHub plugin for GitHub account management. For more details on managing your
-accounts, check out the [JetBrains GitHub plugin documentation](https://www.jetbrains.com/help/idea/github.html).
-
-To set the GitHub account for Actionate to use, go to `Actionate` -> `Settings` -> `Account` and select from the
-available accounts sourced from the JetBrains GitHub plugin.
-
-__Note:__ Some organizations restrict the permissions of the JetBrains GitHub integration token, which may cause 
-unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the 
-`Login in with Token` option. The token requires repo scope. We are working on a way to automatically detect this 
-situation and inform users when a PAT is required.
-
 ### View Workflow Runs
 
-With Actionate, you can easily view both current and past workflow runs, directly within your JetBrains IDE. Whether 
-you’re monitoring the progress of a new run or reviewing historical executions, Actionate provides a streamlined way to 
-access all relevant information.
+Get a real-time view of both current and past workflow runs right inside your JetBrains IDE.
 
-- __Current and Past Workflow Runs:__ View the status, jobs, steps, logs, annotations, and artifacts of both ongoing and completed workflows.
+![workflow runs demo](docs/media/workflow-runs-demo.gif)
 
-- __Automatic Discovery:__ New workflow runs are automatically discovered and shown in the IDE without requiring you to 
-  manually refresh. This ensures you always have up-to-date information about your workflows.
+- __Current and Past Runs__\
+  Monitor in-progress runs in real time and review completed ones at a glance.
 
-- __Comprehensive Details:__ Dive deep into each workflow run to examine job statuses, view individual step outputs, and 
-  inspect logs to troubleshoot or analyze build performance.
+- __Powerful Filtering__\
+  Filter runs by branch, actor, event, or status, either individually or in combination, to quickly find exactly what you need.
 
-- __Powerful Filtering:__ Easily filter workflow runs by branch, actor, event, and status, allowing you to quickly find 
-  the specific runs you need. Whether you’re looking for a run triggered by a specific person, on a particular branch, 
-  or based on a certain event type, Actionate makes it simple to narrow down your results.
+- __Automatic Discovery__\
+  New runs appear automatically, so you always have up-to-date information with zero extra clicks.
 
 ### View Comprehensive Workflow Run Details
 
-Actionate makes it easy to dive deep into the specifics of any workflow run. With detailed insights into each run, you 
-can analyze performance, troubleshoot issues, or simply monitor the execution of your workflows—all directly from your 
-JetBrains IDE.
+View every detail of any workflow run including jobs, steps, logs, artifacts, annotations, and all run attempts directly 
+inside your JetBrains IDE, so you can troubleshoot issues and manage everything in one place.
 
-- __Job and Step Breakdown:__ See each job and its corresponding steps within a workflow run, with detailed information 
-  on each step’s status, logs, and execution time.
+![workflow run demo](docs/media/workflow-run-demo.gif)
 
-- __Logs and Annotations:__ View logs for individual jobs and steps, along with any annotations that provide additional 
-  context, such as warnings, errors, or notices, making it easier to identify and address issues.
+- __Run Metadata__\
+  View details like overall status, triggering event, triggering actor, duration, associated pull request, commit, branch, 
+  and the workflow file used.
 
-- __Artifacts and Build Reports:__ Access and download artifacts generated during the workflow run, such as build 
-  outputs, test results, or reports. This allows you to examine the results in detail without leaving the IDE.
+- __Annotations__\
+  Check run-level or job-level annotations directly in the IDE, and use automatically discovered links to open any 
+  referenced URLs in your browser with a single click.
 
-- __Run Metadata:__ View and open key details such as commit, branch, pull request, and workflow file associated with a run.
+- __Artifacts__\
+  View all artifacts produced by a run, with the option to download and open each one directly in your IDE.
 
-- __Interactive Log Navigation:__ Navigate logs easily with expandable log groups, log message color formatting (notice, warning, error), 
-  and the ability to open specific log lines directly in GitHub for further investigation.
-    - __Copy Link to Log Line:__ Copy the link to any specific log line in GitHub to easily share it with colleagues. 
-      This ensures that everyone is looking at the same information, making collaboration and troubleshooting more efficient.
+- __Jobs__\
+  View all jobs in a run and their corresponding status at a glance, so you can spot successes or failures instantly.
 
-- __View All Run Attempts:__ View comprehensive details for __all__ run attempts.
+- __Steps__\
+  See every step in a job along with its status, making it easy to track progress and identify issues.
+
+- __Logs__\
+  View all logs for a run, complete with collapsible log groups, color-coded notices, warnings, and errors, and 
+  automatic link detection so you can open referenced URLs in your browser with a single click. Right-click any line to 
+  copy its text, copy a direct link (perfect for sharing with teammates), or open it in the browser.
+
+- __Run Attempts__\
+  View all attempts for a run, making it simple to compare multiple executions and track changes over time.
 
 ### Rerun Workflow Runs
 
-Actionate provides you with the ability to rerun a workflow run, allowing you to quickly re-trigger jobs to resolve 
-issues or retry builds without needing to manually start a new workflow. Whether you’re dealing with a failed job or 
-want to rerun the entire workflow, Actionate makes it seamless to get things running again.
+Rerun all jobs or just the failed ones, with optional debug logging for deeper insights, so you can fix issues without 
+starting a new run from scratch.
 
-- __Rerun All Jobs:__ You can easily rerun all the jobs within a workflow run.
+![rerun demo](docs/media/rerun-demo.gif)
 
-- __Rerun Failed Jobs:__ If only certain jobs failed, you can opt to rerun just the failed jobs. This saves you time 
-  and resources by skipping the jobs that were successful, allowing you to focus on the issues at hand.
+- __Rerun All Jobs__\
+  Restart the entire workflow.
 
-Each rerun is treated as a new run attempt, allowing you to view fresh logs, step statuses, and artifacts. Actionate’s 
-rerun feature allows you to quickly iterate and address issues in your workflows, making it easier to keep your build 
-process smooth and efficient.
+- __Rerun Failed Jobs__\
+  Focus only on jobs that encountered errors, saving time and resources.
 
-### Manually Trigger Workflow Runs
+- __Enable Debug Logging__\
+  Turn on debug logs before re-triggering for deeper insights into your workflow runs.
 
-With Actionate, you can manually trigger a new workflow run for workflows that include the workflow_dispatch trigger. 
-This feature provides full support for all input parameters defined in the workflow, allowing you to customize and 
-initiate new runs whenever you need.
+### Manually Run Workflow
 
-- __Trigger Workflows with Workflow Dispatch:__ Easily manually trigger workflows that have the workflow_dispatch trigger 
-  enabled, providing full flexibility to initiate builds or processes on-demand.
+Trigger new runs for workflows that use the `workflow_dispatch` event trigger, complete with full support for all input 
+parameter types, so you can customize and start jobs on-demand, right from your JetBrains IDE.
 
-- __Support for Input Parameters:__ Actionate fully supports all input parameter types defined in your workflow’s 
-  workflow_dispatch trigger. Whether it’s a simple text field, a choice, or a boolean, you can provide the necessary 
-  inputs when triggering a run.
+![manual run demo](docs/media/manual-run-demo.gif)
 
-- __Ref Picker:__ Select which Git reference (branch or tag) to trigger the workflow from. Actionate automatically 
-  retrieves the available input parameters for each reference, ensuring that you’re using the correct parameters for 
-  your selected ref.
+- __Trigger Any Dispatch-Ready Workflow__\
+  Manually run any workflow that defines the `workflow_dispatch` event as a trigger.
 
-- __Customizable and On-Demand:__ With manual triggers, you can start workflows as needed, giving you more control over 
-  your CI/CD process. Whether for testing, re-deployments, or special cases, you have the flexibility to trigger 
-  workflows on your terms.
+- __Ref Picker__\
+  Choose the branch or tag you want to run the workflow from.
 
-Actionate’s support for workflow_dispatch gives you greater control over your workflows, allowing you to initiate runs 
-with custom inputs and tailored configurations right from your JetBrains IDE.
+- __Input Parameters__\
+  Retrieve and populate all defined inputs for the selected ref, with full support for every parameter 
+  type and respect for default values set in your workflow file.
 
-## 🚀 Coming Soon
+- __Input Validation__\
+  Required parameters must have a value before the workflow can be triggered, ensuring no critical inputs are overlooked.
 
-We’re always looking for ways to improve Actionate, and we're thrilled to share what's coming in the next few immediate
-releases. These features are designed to make your GitHub Actions experience inside JetBrains IDEs even smoother and
-more powerful. And this is just the beginning. We've got tons more in the pipeline, and we'd love to hear your ideas too!
+> [!NOTE]
+> Only workflows that use the `workflow_dispatch` event trigger are manually runnable.
 
-### What's Next?
+### Multi-Account Support
 
-Here's what you can expect very soon:
+Leveraging the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) for account management, you 
+can seamlessly work with multiple GitHub accounts. Set a global default or assign a unique account to each project for 
+maximum flexibility.
 
-- __Graceful Handling of Extremely Long Logs__
+![multi-account demo](docs/media/multi-account-demo.gif)
 
-  Say goodbye to sluggish scrolling, freezing, and those "Oops, something unexpected happened" errors—yeah, we probably
-  should have paginated large logs from the start... our bad.
+- __JetBrains GitHub Plugin Integration__\
+  Account management is powered by the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) to 
+  seamlessly handle multiple GitHub accounts.
 
-- __Log Search__
-
-  Ever tried finding that one failing test buried in 70,000 lines of logs? We've got you covered. A powerful search
-  feature is on the way to help you locate exactly what you need—no more manual scrolling marathons.
-
-- __Richer Log Formatting__
-
-  We're adding support for ANSI color codes and other enhancements to bring your logs to life.
-
-- __Managing Actions Environments, Variables, and Secrets__
-
-  You'll soon be able to handle all your environment variables and secrets directly from the IDE. Even better,
-  Actionate will auto-complete those values when you're authoring workflow files—so no more worrying about
-  fat-fingering a hardcoded string again.
-
-### But Wait, There (Will) Be More...
-
-These are just the next features we're rolling out. We have a huge list of exciting ideas for the future. And honestly?
-We'd love your input. We want to hear from you! What would make the perfect GitHub Actions workflow inside your
-JetBrains IDE? No idea is too big, too small, or too weird.
-
-Drop us a feature request or just say hi—we'd be thrilled to build something that makes your workflow smoother and
-your day a little easier.
+- __Project-Specific Account Assignment__\
+  Assign a dedicated GitHub account to each project. Once set, your configuration is saved, so you only need to assign 
+  it once. You can update the assignment at any time by choosing a different active account in Actionate's settings.
 
 ## Getting Started
 
-Getting started with Actionate is easy and only requires a few simple steps:
+__Step 1: Install Actionate__
 
-1. __Install the Actionate plugin__
+Start by installing Actionate and enjoy a 7-day free trial to explore its full range of features with no commitment.
+After the trial, continue using the plugin for only \$1 per month or \$10 per year. For detailed installation instructions,
+refer to the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
-   Install Actionate in your preferred JetBrains IDE. For detailed plugin installation instruction, refer to 
-   the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html)
+__Step 2: Add a GitHub Account__
 
-2. __Add a GitHub Account__
-   
-   Actionate integrates with the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html). To use it, add your GitHub account by navigating to 
-   `Settings -> GitHub` and follow the instructions to authenticate with your GitHub account.
+Actionate leverages the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) for account management.
+If no GitHub account is found, you'll be prompted to add one on first launch. Click `add account` and follow the 
+instructions to authenticate and add your account.
 
-   __Note:__ Some organizations restrict permissions for the JetBrains GitHub integration token, which may cause
-   unexpected issues. If you encounter problems, try logging in with a [classic Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) via the
-   `Login in with Token` option. The token requires the `repo` scope. If your organization uses Single Sign-On (SSO), 
-   ensure that you authorize SSO access for your PAT to avoid authentication issues. We're working on an automatic 
-   detection feature to notify users when a PAT is required.
+> [!NOTE]
+> GitHub organizations can restrict the permissions of the JetBrains GitHub integration token, which can lead to issues.
+> If you encounter problems, try logging in with a [classic Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
+> via the `Login with Token` option (ensure the token has repo scope). If your organization uses SSO, your PAT
+> may need to be SSO authorized. We're working on automatically detecting this situation and notifying users when a PAT is needed.
 
-3. __Workflow Detection__
+__Step 3: Start Using Actionate__
 
-   Actionate automatically detects the GitHub repository associated with your open JetBrains project by examining the 
-   project's Git configuration.
-   - If you don't see any workflows listed, it's likely because the open project is either not a GitHub repository or no workflows are currently associated with it.
-   - If you'd prefer to manually set the repository instead of relying on automatic detection, please let us know by opening a `Feature Request` issue.
+Actionate automatically detects the GitHub repository for your open JetBrains project by reading its Git configuration.
+If you see `no workflows`, it's likely because the project is not a GitHub repository or has no workflows defined.
+
+![getting started demo](docs/media/getting-started-demo.gif)
 
 ## Support
 
-If you’re experiencing unexpected behavior or have an idea for a new feature or enhancement, please don’t hesitate to 
-create an issue in this repository. Your feedback is important to us!
+If you encounter any issues or have suggestions for improvements, please create an issue in this repository. Your 
+feedback is invaluable!
 
 We offer the following issue templates to help you get started:
 
-- __Bug Report:__ If something is not working as expected, please use this template to provide details about the issue.
+- __Bug Report__\
+  If something is not working as expected, please use this template to provide details about the issue.
 
-- __Feature Request:__ If you have a suggestion for a new feature or enhancement, we’d love to hear it! Use this 
-  template to describe your idea.
+- __Feature Request__\
+  If you have a suggestion for a new feature or enhancement, we'd love to hear it! Use this template to describe your idea.
 
-- __Support Request:__ If you need troubleshooting help or additional information, please use this template to outline your request.
+- __Support Request__\
+  If you need troubleshooting help or additional information, please use this template to outline your request.
 
-We’re committed to improving Actionate and appreciate your contributions!
+## What's Next?
 
-## Screenshots
+__Support Extremely Long Logs__
 
-![workflow runs](docs/media/workflow-runs.png)
+Actionate currently handles 99% of logs seamlessly. However, extremely long logs trigger an 
+`Oops, something unexpected happened` error. The Actions Web UI can't currently handle these extremely long logs either, 
+you're prompted to download the raw logs instead. This upcoming enhancement will ensure that all logs, regardless of 
+size, are fully supported.
 
-![filtered workflow runs](docs/media/filtered-workflow-runs.png)
+__Log Search__
 
-![run summary](docs/media/run-summary.png)
+Quickly locate specific entries in your logs without manual scrolling, just enter a search term to instantly find what 
+you need.
 
-![run job](docs/media/run-job.png)
+__Smart Log Navigation__
 
-![run job step logs](docs/media/run-job-step-logs.png)
+Easily jump to the beginning or end of your logs, or directly to notices, warnings, and errors, for a more streamlined experience.
 
-![rerun](docs/media/rerun.png)
+__Enhanced Log Formatting__
 
-![rerun in progress](docs/media/rerun-in-progress.png)
+Display logs with full support for ANSI color codes and other formatting improvements, ensuring a visually rich, 
+easy-to-read output for efficient debugging and analysis.
 
-![rerun attempt picker](docs/media/run-attempt-picker.png)
+__Manage Environments, Variables, and Secrets__
 
-![manual run](docs/media/manual-run.png)
+Manage repository environments, Actions variables, and secrets directly from your IDE, with auto-complete support for 
+those values when authoring workflow files.
+
+### But Wait, There (Will) Be More
+
+These are just the next immediate features we have planned. We have a huge list of exciting ideas for the future. And
+honestly, we'd love your input! Drop us a feature request or just say hi, we'd be thrilled to build something that makes
+your workflow smoother and your day a little easier.

@@ -59,9 +59,10 @@ inside your JetBrains IDE, so you can troubleshoot issues and manage everything 
   See every step in a job along with its status, making it easy to track progress and identify issues.
 
 - __Logs__\
-  View all logs for a run, complete with collapsible log groups, color-coded notices, warnings, and errors, and 
-  automatic link detection so you can open referenced URLs in your browser with a single click. Right-click any line to 
-  copy its text, copy a direct link (perfect for sharing with teammates), or open it in the browser.
+  View all logs for a run, complete with collapsible log groups and color-coded notices, warnings, and errors. Automatic 
+  link detection turns external URLs and project file references into clickable links, letting you open them in your 
+  browser or jump straight to the file in your IDE. Right-click any line to copy its text, copy a shareable link, or 
+  open it in the browser.
 
 - __Run Attempts__\
   View all attempts for a run, making it simple to compare multiple executions and track changes over time.
@@ -186,11 +187,6 @@ __Enhanced Log Formatting__
 
 Display logs with full support for ANSI color codes and other formatting improvements, ensuring a visually rich, 
 easy-to-read output for efficient debugging and analysis.
-
-__Open Project Files Referenced in Logs__
-
-Automatically detect project files references in your logs and convert them into clickable links that open directly in 
-your IDE. This mirrors our existing browser link detection, streamlining navigation and boosting productivity during debugging.
 
 __Manage Environments, Variables, and Secrets__
 

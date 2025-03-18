@@ -60,8 +60,10 @@ inside your JetBrains IDE, so you can troubleshoot issues and manage everything 
   See every step in a job along with its status, making it easy to track progress and identify issues.
 
 - __Logs__\
-  View all logs for a run, complete with collapsible log groups and color-coded notices, warnings, and errors. Automatic 
-  link detection turns external URLs and project file references into clickable links, letting you open them in your 
+  View logs of [any size](https://github.com/revenate/actionate/releases/tag/v2025.1.5) for a run, without truncation or 
+  size limitations, complete with collapsible log groups and color-coded notices, warnings, and errors. Automatic 
+  link detection turns external URLs and [project file references](https://github.com/revenate/actionate/releases/tag/v2025.1.4)
+  into clickable links, letting you open them in your 
   browser or jump straight to the file in your IDE. Right-click any line to copy its text, copy a shareable link, or 
   open it in the browser.
 
@@ -167,13 +169,6 @@ We offer the following issue templates to help you get started:
   If you need troubleshooting help or additional information, please use this template to outline your request.
 
 ## What's Next?
-
-__Support Extremely Long Logs__
-
-Actionate currently handles 99% of logs seamlessly. However, extremely long logs trigger an 
-`Oops, something unexpected happened` error. The Actions Web UI can't currently handle extremely long logs either,
-you're prompted to download the raw logs instead. This upcoming enhancement will ensure that all logs, regardless of 
-size, are fully supported.
 
 __Log Search__
 

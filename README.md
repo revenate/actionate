@@ -63,8 +63,10 @@ inside your JetBrains IDE, so you can troubleshoot issues and manage everything 
   View logs of [any size](https://github.com/revenate/actionate/releases/tag/v2025.1.5) for a run, without truncation or 
   size limitations, complete with collapsible log groups and color-coded notices, warnings, and errors. Automatic 
   link detection turns external URLs and [project file references](https://github.com/revenate/actionate/releases/tag/v2025.1.4)
-  into clickable links, letting you open them in your 
-  browser or jump straight to the file in your IDE. Right-click any line to copy its text, copy a shareable link, or 
+  into clickable links, letting you open them in your browser or jump straight to the file in your IDE. 
+  [Smart Log navigation](https://github.com/revenate/actionate/releases/tag/v2025.1.6) enables you to easily jump to the 
+  beginning or end of your logs, or directly to notices, warnings, and errors, for a more streamlined experience. 
+  Right-click any line to copy its text, copy a shareable link, or 
   open it in the browser.
 
 - __Run Attempts__\
@@ -174,10 +176,6 @@ __Log Search__
 
 Quickly locate specific entries in your logs without manual scrolling, just enter a search term to instantly find what 
 you need.
-
-__Smart Log Navigation__
-
-Easily jump to the beginning or end of your logs, or directly to notices, warnings, and errors, for a more streamlined experience.
 
 __Enhanced Log Formatting__
 

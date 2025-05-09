@@ -120,14 +120,14 @@ Author your GitHub Actions workflows faster and with fewer errors using intellig
 - __Environment Autocomplete__\
   Quickly insert GitHub Actions environments defined in your repository without needing to memorize or manually look them up.
 
-- __Configuration Variables__\
-  AutocompleteEasily select from repository-level configuration variables with automatic suggestions as you type, ensuring 
-  accuracy and consistency. Autocomplete suggestions correctly reflect overrides by prioritizing environment-level values 
-  first, followed by repository-level values, and finally organization-level values if no higher-priority override exists. 
+- __Configuration Variables Autocomplete__\
+  Easily select from repository level configuration variables with automatic suggestions as you type, ensuring 
+  accuracy and consistency. Autocomplete suggestions correctly reflect overrides by prioritizing environment level values 
+  first, followed by repository level values, and finally organization level values if no higher-priority override exists. 
   Each suggestion clearly indicates its source (repository, organization, or environment), eliminating any ambiguity about the value’s origin.
 
 - __Secrets Autocomplete__\
-  Effortlessly include repository secrets with intelligent suggestions saving time, and reducing manual errors. 
+  Effortlessly include repository secrets with intelligent suggestions saving time and reducing manual errors. 
   Autocomplete respects overrides across multiple definition levels, environment level definitions have the highest priority, 
   followed by repository level, and lastly, organization level definitions. Each secret suggestion explicitly displays 
   its source, ensuring you never have to guess where a secret is defined.

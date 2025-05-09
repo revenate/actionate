@@ -111,6 +111,33 @@ parameter types, so you can customize and start jobs on-demand, right from your 
 > [!NOTE]
 > Only workflows that use the `workflow_dispatch` event trigger are manually runnable.
 
+### Assistance When Authoring Workflows
+
+Author your GitHub Actions workflows faster and with fewer errors using intelligent autocomplete directly in your JetBrains IDE.
+
+![completion demo](docs/media/completion-demo.gif)
+
+- __Environment Autocomplete__\
+  Quickly insert GitHub Actions environments defined in your repository without needing to memorize or manually look them up.
+
+- __Configuration Variables__\
+  AutocompleteEasily select from repository-level configuration variables with automatic suggestions as you type, ensuring 
+  accuracy and consistency. Autocomplete suggestions correctly reflect overrides by prioritizing environment-level values 
+  first, followed by repository-level values, and finally organization-level values if no higher-priority override exists. 
+  Each suggestion clearly indicates its source (repository, organization, or environment), eliminating any ambiguity about the value’s origin.
+
+- __Secrets Autocomplete__\
+  Effortlessly include repository secrets with intelligent suggestions saving time, and reducing manual errors. 
+  Autocomplete respects overrides across multiple definition levels, environment level definitions have the highest priority, 
+  followed by repository level, and lastly, organization level definitions. Each secret suggestion explicitly displays 
+  its source, ensuring you never have to guess where a secret is defined.
+
+Overrides for secrets and configuration variables are automatically calculated based on your current job context. If 
+the workflow job specifies an environment, Actionate dynamically applies environment level overrides, ensuring the 
+most accurate and contextually relevant suggestions.
+
+Autocomplete suggestions appear contextually as you edit your workflow files, streamlining your workflow creation and improving your overall productivity.
+
 ### Multi-Account Support
 
 Leveraging the [JetBrains GitHub plugin](https://www.jetbrains.com/help/idea/github.html) for account management, you 
@@ -184,8 +211,7 @@ easy-to-read output for efficient debugging and analysis.
 
 __Manage Environments, Variables, and Secrets__
 
-Manage repository environments, Actions variables, and secrets directly from your IDE, with auto-complete support for 
-those values when authoring workflow files.
+Manage repository environments, Actions variables, and secrets directly from your IDE.
 
 __Auto-Rerun__
 

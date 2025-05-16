@@ -158,7 +158,7 @@ maximum flexibility.
 
 __Step 1: Install Actionate__
 
-Start by installing Actionate and enjoy a 7-day free trial to explore its full range of features with no commitment.
+Start by installing Actionate and enjoy a 30-day free trial to explore its full range of features with no commitment.
 After the trial, continue using the plugin for only \$1 per month or \$10 per year. For detailed installation instructions,
 refer to the [JetBrains Plugin Documentation](https://www.jetbrains.com/help/idea/managing-plugins.html).
 

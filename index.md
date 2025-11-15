@@ -20,7 +20,17 @@ That question led me to build **Actionate**, a JetBrains plugin that brings GitH
 - What an “ideal” GitHub Actions + JetBrains workflow looks like
 - How to set that up so you can see and manage CI **without leaving your editor**
 
-You can use Actionate to follow along, or just steal the ideas and see if this “CI in your editor” mindset resonates.
+<div class="docs-callout">
+  <span class="docs-callout-label">Need setup & configuration details?</span>
+  <a
+    class="docs-callout-link"
+    href="https://github.com/YOUR_USERNAME/YOUR_REPO#readme"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View the full Actionate docs on GitHub →
+  </a>
+</div>
 
 ---
 

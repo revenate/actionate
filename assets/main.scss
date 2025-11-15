@@ -1,0 +1,226 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@import "minima";
+
+/* Dark base */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #020617; /* near-black slate */
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+/* Content layout */
+.page-content {
+  padding: 3rem 1rem 4rem;
+}
+
+.page-content .wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Remove the "card" look around the whole article */
+.page,
+.post {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  color: #f9fafb;
+  letter-spacing: 0.01em;
+}
+
+/* Main page/post title */
+.post-title,
+.page-title {
+  position: relative;
+  font-size: clamp(2.1rem, 3.4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  line-height: 1.25;
+
+  /* Subtle gradient text */
+  background: linear-gradient(120deg, #e5e7eb, #7dd3fc, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Accent bar under the title */
+.post-title::after,
+.page-title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 3px;
+  margin-top: 0.55rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  opacity: 0.9;
+}
+
+/* Section headings */
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  color: #e5e7eb;
+}
+
+
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  color: #e5e7eb;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+
+/* Links */
+a {
+  color: #38bdf8; /* cyan accent */
+  text-decoration: none;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+a:hover {
+  color: #bae6fd;
+  border-bottom-color: rgba(186, 230, 253, 0.9);
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* Code blocks + inline code */
+pre,
+code {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-radius: 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  border: 1px solid #1f2937;
+}
+
+code {
+  padding: 0.12rem 0.3rem;
+  font-size: 0.93em;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid #38bdf8;
+  margin: 1.8rem 0;
+  padding: 0.6rem 1.1rem;
+  color: #e5e7eb;
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 0.4rem;
+}
+
+/* Images (your GIFs) */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.75rem auto;
+  border-radius: 0.9rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+}
+
+/* Horizontal rule */
+hr {
+  border: 0;
+  border-top: 1px solid #1e293b;
+  margin: 2.5rem 0;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+  .page-content {
+    padding: 2rem 1rem 3rem;
+  }
+}
+
+.docs-callout {
+  margin: 1.8rem 0 2.2rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid #1e293b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+}
+
+.docs-callout-label {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* More specific selector so we beat Minima's link styles */
+.post-content .docs-callout-link {
+  font-size: 0.95rem;
+  color: #7dd3fc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 500;
+}
+
+.post-content .docs-callout-link:hover {
+  color: #bae6fd;
+  border-bottom-color: rgba(186, 230, 253, 0.9);
+}
+
+/* Stack on small screens */
+@media (max-width: 640px) {
+  .docs-callout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

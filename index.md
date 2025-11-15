@@ -24,7 +24,7 @@ That question led me to build **Actionate**, a JetBrains plugin that brings GitH
   <span class="docs-callout-label">Need setup & configuration details?</span>
   <a
     class="docs-callout-link"
-    href="https://github.com/YOUR_USERNAME/YOUR_REPO#readme"
+    href="https://github.com/revenate/actionate#readme"
     target="_blank"
     rel="noopener noreferrer"
   >

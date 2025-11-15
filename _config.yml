@@ -1,0 +1,5 @@
+title: "Actionate"
+description: Run GitHub Actions from inside JetBrains IDEs.
+theme: minima
+url: "https://revenate.github.io"
+baseurl: "/actionate"

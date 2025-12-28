@@ -35,6 +35,23 @@ Get a real-time view of both current and past workflow runs right inside your Je
 - __Automatic Discovery__\
   New runs appear automatically, so you always have up-to-date information with zero extra clicks.
 
+### Workflow Run Notifications
+
+Subscribe to a workflow run and get a native JetBrains IDE notification when it completes, so you don't have to keep
+checking progress or switching to the browser.
+
+![workflow run notification demo](docs/media/notification-demo.gif)
+
+- __Subscribe to Any Run__\
+  Subscribe to a workflow run and Actionate will notify you when the run finishes.
+
+- __Run Summary at a Glance__\
+  Notifications include the run's status and relevant run context so you can quickly understand the outcome.
+
+- __One-Click Actions__\
+  Jump straight to the run inside the IDE with `Open in Actionate`, or view the same run on GitHub with `Open in 
+  GitHub`.
+
 ### View Comprehensive Workflow Run Details
 
 View every detail of any workflow run including jobs, steps, logs, artifacts, annotations, and all run attempts directly 
@@ -217,11 +234,6 @@ __Auto-Rerun__
 
 Automatically rerun failed workflow runs with a customizable retry limit, ensuring your processes have a chance to
 recover without risking endless loops.
-
-__Workflow Run Notifications__
-
-Subscribe to workflow runs to receive native JetBrains IDE notifications when they complete, along with their status,
-so you don’t have to constantly monitor progress.
 
 __Run Config Integration__
 

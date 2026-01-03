@@ -37,20 +37,22 @@ Get a real-time view of both current and past workflow runs right inside your Je
 
 ### Workflow Run Notifications
 
-Subscribe to a workflow run and get a native JetBrains IDE notification when it completes, so you don't have to keep
-checking progress or switching to the browser.
+Get native JetBrains IDE notifications when runs complete, so you don’t have to keep checking progress or switching 
+to the browser.
 
-![workflow run notification demo](docs/media/notification-demo.gif)
+![workflow run notification demo](docs/media/notifications-demo.gif)
 
-- __Subscribe to Any Run__\
-  Subscribe to a workflow run and Actionate will notify you when the run finishes.
+- __Subscribe to an Individual Run__\
+  Subscribe to any workflow run and Actionate will notify you when that specific run finishes.
+
+- __Subscribe to a Workflow (Auto-Subscribe)__\
+  Subscribe to a workflow to automatically subscribe to **all runs you trigger** on your **current branch**. As new runs start, Actionate auto-subscribes you and you’ll receive a notification when each run completes.
 
 - __Run Summary at a Glance__\
   Notifications include the run's status and relevant run context so you can quickly understand the outcome.
 
 - __One-Click Actions__\
-  Jump straight to the run inside the IDE with `Open in Actionate`, or view the same run on GitHub with `Open in 
-  GitHub`.
+  Jump straight to the run inside the IDE with `Open in Actionate`, or view the same run on GitHub with `Open in GitHub`.
 
 ### View Comprehensive Workflow Run Details
 
